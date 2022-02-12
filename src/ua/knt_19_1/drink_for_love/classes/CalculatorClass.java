@@ -40,7 +40,7 @@ public class CalculatorClass implements Calculator {//The class deals with the p
             storage.setB(x2);//Setting new right value of range
         }
         return true;//Returning true
-    }//Calculates new iteration of method (return false if we more then on 30 iteration else returns true)
+    }//Calculates new iteration of method (return false if we more than on 30 iteration else returns true)
 
     */
 
@@ -71,8 +71,8 @@ public class CalculatorClass implements Calculator {//The class deals with the p
             x1 = storage.getA() + (( storage.getB() - storage.getA() ) * (1 - fi));//Calculating new x1
             y1 = foo(storage, x1);//Calculating f(x1)
         }
-        return true;//Rerurning true
-    }//Calculates new iteration of method (return false if we more then on 30 iteration else returns true)
+        return true;//Returning true
+    }//Calculates new iteration of method (return false if we more than on 30 iteration else returns true)
 
     private double foo(Storage storage, double x) throws ScriptException {//Function returns calculated value of function on this x
         String function = storage.getFunction().replace("x",String.valueOf(x));//Replacing 'x' in function to specific value
